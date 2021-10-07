@@ -19,7 +19,7 @@ public class Usuario {
 	
 	@NotNull
 	@Size(min = 2, max = 100)
-	private String nomeString;
+	private String nome;
 	
 	@NotNull
 	@Size(min = 5, max = 100)
@@ -37,12 +37,12 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public String getNomeString() {
-		return nomeString;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeString(String nomeString) {
-		this.nomeString = nomeString;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getUsuario() {
