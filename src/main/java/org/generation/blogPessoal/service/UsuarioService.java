@@ -39,8 +39,10 @@ public class UsuarioService {
 
 				user.get().setToken(authHeader);
 				user.get().setNome(usuario.get().getNomeString());
+
+				return user;
 			}
 		}
-
+		return null;
 	}
 }
